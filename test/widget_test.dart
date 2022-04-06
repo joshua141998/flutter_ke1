@@ -95,3 +95,49 @@ void main() {
   print("--------------------------------------");
   nilai >= 80 ? print("A") : print("Tidak A");
 }
+
+
+//function
+  print("----- Functional -------");
+
+  hitungnilai();
+  hitungnilai1(70, 90);
+  var p = hitungnilai1(70, 2, 50);
+  print(p);
+  var n = hitungnilai2(mapel1: 50, mapel2: 2);
+  print(n);
+  hitungnilai3(70, 90);
+}
+
+//function
+hitungnilai() {
+  print("hitung nilai");
+}
+
+//positional argument
+hitungnilai1(mapel1, mapel2, [mapel3]) {
+  var nilaiakhir;
+  if(mapel3 != null){
+    nilaiakhir = mapel1 / mapel2 + mapel3;
+  }else{
+     nilaiakhir = mapel1 / mapel2;
+  }
+  return nilaiAkhir;
+}
+
+//name argument
+hitungnilai2((mapel1, mapel2)) {
+  var nilaiakhir;
+  if(mapel2 != null){
+    nilaiakhir = mapel1 / mapel2;
+  }else{
+     nilaiakhir = mapel1;
+  }
+  return nilaiakhir;
+}
+
+//void
+ void hitungnilai3(mapel1, mapel2){
+   var nilaiakhir = mapel1 + mapel2;
+ print(nilaiakhir);
+ }          
